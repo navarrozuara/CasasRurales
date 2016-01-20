@@ -1,0 +1,381 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+}
+
+#index {
+	background: url("../img/fondos/fondoInicio.jpg") no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#welcome {
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+#titIndex, #subIndex {
+	color: #FFFFFF;
+	font-family: 'Sofia', cursive;
+	text-align: center;
+}
+
+#titIndex {
+	font-size: 4em;
+	text-shadow: 0px 2px 0px #CDAA7D;
+}
+
+#enter {
+	text-align: center;
+	margin-top: 2em;
+	position: relative;
+	right: 300px;
+	visibility: hidden;
+	animation-name: btnInicio;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#enter a {
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	letter-spacing: 0.1em;
+	padding: 5px 60px;
+	text-decoration: none;
+	transition: all 1s;
+}
+
+#enter a:hover {
+	background: rgba(205,170,125,0.6);
+}
+
+@keyframes btnInicio {
+	from {
+		right: 600px;
+		visibility: hidden;
+	}
+	to {
+		right: 0px;
+		visibility: visible;
+	}
+}
+
+header {
+	background: rgba(205,170,125,0.6);
+	display: inline-block;
+	width: 100%;
+}
+
+header h1 {
+	color: #8B7355;
+	font-family: 'Sofia', cursive;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul li {
+	background: rgba(139,115,85,0.8);
+	border-bottom: 1px solid #FEFEFE;
+	display: block;
+	list-style: none;
+	padding: 0.5em;
+}
+
+nav ul li a {
+	color: #EEC591;
+	text-decoration: none;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+	color: #FFFFFF;
+}
+
+#searchPanel {
+	display: none;
+}
+
+#searchBarSmall {
+	margin-top: 2em;
+	margin-left: 3em;
+	margin-bottom: 1.5em;
+}
+
+#searchBarSmall input[type=text] {
+	border: 1px solid #8B7355;
+	border-radius: 15px;
+	display: inline-block;
+	padding: 0.2em;
+	text-align: center;
+	width: 80%;
+}
+
+main {
+	background: rgba(205,170,125,0.2);
+	display: inline-block;
+	width: 100%;
+}
+
+article {
+	background: rgba(255,255,255,0.6);;
+	display: inline-block;
+	box-shadow: 4px 4px 4px #BEBEBE;
+	margin: 0.6em;
+	margin-left: 1em;
+	margin-top: 1em;
+	padding: 1.5em;
+	width: auto;
+}
+
+article:hover {
+	box-shadow: 0px 0px 6px #BEBEBE;
+}
+
+#container {
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.datosHouse {
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.datosHouse span {
+	display: block;
+	font-size: 14px;
+	text-align: right;
+	margin: 0.4em;
+}
+
+.imgHouse {
+	display: inline-block;
+}
+
+.imgHouse img {
+	width: 280px;
+	height: 220px;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.action-button {
+	background: #CDAA7D;
+	border-bottom: 5px solid #8B7355;
+	border-radius: 10px;
+	color: #FFFFFF;
+	left: 5.5em;
+	padding: 0.5em;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.6s;
+}
+
+.action-button:hover {
+	background: #8B7355;
+	border-bottom: 5px solid #CDAA7D;
+}
+
+footer {
+	background: rgba(139,115,85,0.8);
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+h3 {
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 0.4em;
+}
+
+#contacto, #social {
+	display: inline-block;
+}
+
+#social {
+	vertical-align: top;
+}
+
+#listContacto, #listSocial {
+	text-align: center;
+	list-style: none;
+	padding: 1em;
+}
+
+#listSocial li {
+	display: inline-block;
+}
+
+#listSocial li:hover {
+	transform: scale(1.1,1.1);
+}
+
+#listContacto li a {
+	color: #333333;
+	text-decoration: none;
+}
+
+#listContacto li a:hover {
+	color: #5B5B5B;
+	text-decoration: underline;
+}
+
+#formReserva form {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+#formReserva h2 {
+	color: #8B7355;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#formReserva input {
+	border-radius: 5px;
+	margin: 1em;
+	padding: 0.2em;
+	width: 80%;
+}
+
+#formReserva input[type=text]:valid, #formReserva input[type=date]:valid, #formReserva input[type=number]:valid {
+	border-color: lightgreen;
+	box-shadow: 0px 2px 0px lightgreen;
+}
+
+#formReserva input:invalid {
+	border-color: #FF0000;
+	box-shadow: 0px 2px 0px #FF0000;
+}
+
+#formReserva input[type=submit] {
+	background: rgba(205,170,125,0.6);
+	color: #FFFFFF;
+	padding: 5px 60px;
+	transition: all 1s;
+}
+
+#formReserva input[type=submit]:hover {
+	background: rgba(139,115,85,0.8);
+}
+
+@media (min-width: 767px) {
+	#welcome {
+		margin-top: 50%;
+	}
+	#enter {
+		top: 2em;
+	}
+	#enter a {
+		font-size: 22px;
+	}
+	#searchBarSmall {
+		margin-left: 6em;
+	}
+	article {
+		margin-left: 1.6em;
+	}
+	#contacto, #social {
+		width: 48%;
+	}
+	#formReserva input {
+		width: 50%;
+	}
+	#formReserva label {
+		display: inline-block;
+		text-align: left;
+		width: 160px;
+	}	
+}
+
+@media (min-width: 1024px) {
+	#welcome {
+		margin: 0;
+	}
+	#enter {
+		top: 4em;
+	}
+	#enter a {
+		font-size: 32px;
+	}
+	nav {
+		background: rgba(139,115,85,0.8);
+	}
+	nav ul li {
+		background: none;
+		border-bottom: 0;
+		display: inline-block;
+	}
+	#searchBarSmall {
+		display: none;
+	}
+	#searchPanel {
+		background: url("../img/fondos/fondoInicio.jpg") no-repeat;
+		background-size: 100% 290px;
+		display: inline-block;
+		width: 100%;
+		height: 290px;
+	}
+	#searchPanel h2 {
+		color: #FFFFFF;
+		font-size: 2.25em;
+		margin-left: 3em;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+		text-shadow: 0px 0px 4px #CDAA7D;
+	}
+	#searchPanel h4 {
+		color: #FFFFFF;
+		margin-left: 4.5em;
+		margin-bottom: 0.2em;	
+	}
+	#searchBar {
+		background: rgba(0,0,0,0.6);
+		border-radius: 30px;
+		margin-left: 3em;
+		padding: 1em;
+		width: 85%;
+	}
+	#searchBar input {
+		margin-left: 1em;
+		padding: 0.2em;
+	}
+	#searchBar input[type=text], input[type=date], input[type=number] {
+		background: rgba(255,255,255,0.6);
+		border: 0;
+	}
+	#searchBar input[type=submit] {
+		background: rgba(205,170,125,0.6);
+		color: #FFFFFF;
+		letter-spacing: 0.1em;
+		padding: 5px 60px;
+		transition: all 0.8s;
+	}
+	#searchBar input[type=submit]:hover {
+		background: rgba(139,115,85,0.8);
+	}
+	article {
+		margin-left: 4.5em;
+		margin-top: 2em;
+	}
+	#formReserva input {
+		width: 30%;
+	}
+}
